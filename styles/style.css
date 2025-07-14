@@ -1,19 +1,88 @@
-*{
+* {
   /* background-color: rebeccapurple; */
+  box-sizing: border-box;
 }
 
-nav{
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+nav {
   display: flex;
   justify-content: space-between;
 }
 
+.search-parent {
+  position: relative;
+  color: #BABABA;
+}
 
-.search-parent input{
+.search-parent input {
+
   border-radius: 66px;
   padding: 15px 30px;
-  width: 500px;
+  width: 600px;
   background-color: rgb(241, 241, 241);
 }
-.search-parent i{
-  position:
+
+.search-parent i {
+  /* font-size: 50px; */
+  position: absolute;
+  top: 17px;
+
+  right: 35px;
+
+}
+
+.nav-items {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}
+
+.nav-items li a {
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 500;
+  color: #707070;
+}
+
+/* Banner Style */
+.banner {
+  display: flex;
+  justify-content: space-between;
+  gap: 5px;
+  align-items: center;
+  background-color: rgb(254, 234, 233);
+  color: #4E4E4E;
+  margin: 0 auto;
+}
+
+.banner h2{
+  /* Font: Poppins; */
+Font-weight: 700px;
+Font-size:56px;
+
+text-align: Align left;
+}
+.banner p{
+ color:#4E4E4E;
+font-weight: 400;
+}
+
+
+.banner-img {
+  width: 402px;
+  height: 378px;
+}
+
+.banner-price{
+color: #FF136F;
+Font-weight: 500;
+font-size: 41px;
+
+}
+.banner-btn{
+  
 }
