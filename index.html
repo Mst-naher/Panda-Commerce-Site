@@ -1,63 +1,197 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+    <!-- Font awsome CDN Link -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
 
-  <!-- Font awsome CDN Link -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
-    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Custom CSS -->
 
-  <!-- Custom CSS -->
+    <link rel="stylesheet" href="./styles/style.css" />
+  </head>
 
-  <link rel="stylesheet" href="./styles/style.css">
+  <body>
+    <main>
+      <nav class="container">
+        <figure>
+          <img src="./images/logo.png" alt="" />
+        </figure>
+        <div class="search-parent">
+          <input type="text" placeholder="Search" />
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+        <ul class="nav-items">
+          <li><a href="#Home">Home</a></li>
+          <li><a href="#Shoes">Shoes</a></li>
+          <li><a href="#Back-pack-section">Backpack</a></li>
+          <li><a href="#Contact Us">Contact Us</a></li>
+        </ul>
+      </nav>
+      <!-- Banner  Left-->
 
+      <section class="banner container" id="Home">
+        <div>
+          <h2>Mi LED TV 4A PRO 32</h2>
 
-</head>
+          <p>
+            Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
+            sint. Velit officia consequat duis enim velit mollit. Exercitation
+            veniam consequat sunt nostrud amet.
+          </p>
 
-<body>
+          <span class="banner-price"> $1289</span> <br />
+          <button class="panda-btn">
+            BUY NOW
+            <i class="fa-solid fa-arrow-right"></i>
+          </button>
+        </div>
+        <!--  Banner Right -->
+        <img class="banner-img" src="./images/banner-images/tv.png" alt="" />
+      </section>
+      <!-- Category Section -->
+      <section class="categories container">
+        <h2 class="common-section-title">Catagories</h2>
+        <div class="categories-card-container">
+          <div class="category-card">
+            <h3>Bag</h3>
+            <img src="./images/categories/bag.png" alt="" />
+          </div>
 
-  <main>
-
-    <nav class="container">
-      <figure>
-        <img src="./images/logo.png" alt="">
-
-      </figure>
-      <div class="search-parent">
-
-        <input type="text" placeholder="Search" />
-        <i class="fa-solid fa-magnifying-glass"></i>
-
+          <div class="category-card">
+            <h3>Watch</h3>
+            <img src="./images/categories/watch.png" alt="" />
+          </div>
+          <div class="category-card">
+            <h3>Shoes</h3>
+            <img src="./images/categories/shoes.png" alt="" />
+          </div>
+        </div>
+      </section>
+      <!-- Shoes Section -->
+      <section class="shoes-backpack-parent" id="Shoes">
+        <div class="shoes-section container">
+          <div class="shoes-backpack-title-parent">
+            <h2>Shoes</h2>
+            <p>See All</p>
+          </div>
+          <div class="shoe-card-container">
+            <div class="shoe-card">
+              <img src="images/shoes/shoe-1.png" alt="" />
+              <h2 class="card-ttle">Reebok Dart Men’s Shoes</h2>
+              <p>
+                Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+                amet sint.
+              </p>
+              <span class="card-price">$1289</span>
+              <button class="panda-btn">
+                BUY NOW
+                <i class="fa-solid fa-arrow-right"></i>
+              </button>
+            </div>
+            <div class="shoe-card">
+              <img src="images/shoes/shoe-2.png" alt="" />
+              <h2 class="card-ttle">Reebok Pump</h2>
+              <p>
+                Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+                amet sint.
+              </p>
+              <span class="card-price">$799</span>
+              <button class="panda-btn">
+                BUY NOW
+                <i class="fa-solid fa-arrow-right"></i>
+              </button>
+            </div>
+            <div class="shoe-card">
+              <img src="images/shoes/shoe-3.png" alt="" />
+              <h2 class="card-ttle">Reebok All Terrain</h2>
+              <p>
+                Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+                amet sint.
+              </p>
+              <span class="card-price">$699</span>
+              <button class="panda-btn">
+                BUY NOW
+                <i class="fa-solid fa-arrow-right"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Back-pack Section -->
+       <section class="shoes-backpack-parent" id="Back-pack-section">
+        <div class="shoes-section container">
+          <div class="shoes-backpack-title-parent">
+            <h2>Shoes</h2>
+            <p>See All</p>
+          </div>
+          <div class="shoe-card-container">
+            <div class="shoe-card">
+              <img src="images/bags/bag-1.png" alt="" />
+              <h2 class="card-ttle">Reebok Dart Men’s Shoes</h2>
+              <p>
+                Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+                amet sint.
+              </p>
+              <span class="card-price">$1289</span>
+              <button class="panda-btn">
+                BUY NOW
+                <i class="fa-solid fa-arrow-right"></i>
+              </button>
+            </div>
+            <div class="shoe-card">
+              <img src="images/bags/bag-2.png" alt="" />
+              <h2 class="card-ttle">Reebok Pump</h2>
+              <p>
+                Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+                amet sint.
+              </p>
+              <span class="card-price">$799</span>
+              <button class="panda-btn">
+                BUY NOW
+                <i class="fa-solid fa-arrow-right"></i>
+              </button>
+            </div>
+            <div class="shoe-card">
+              <img src="images/bags/bag-3.png" alt="" />
+              <h2 class="card-ttle">Reebok All Terrain</h2>
+              <p>
+                Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+                amet sint.
+              </p>
+              <span class="card-price">$699</span>
+              <button class="panda-btn">
+                BUY NOW
+                <i class="fa-solid fa-arrow-right"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+<!-- contact Us section -->
+      <section class="contact-us-parent container" id="Contact Us">
+      <h2>LET'S STAY IN TOUCH </h2>
+      <p>Get updates on sales specials and more</p>
+      <div class="contact-input-btn-parent">
+        <input type="text" placeholder="Enter your email">
+         <button class="panda-btn">Send</button>
       </div>
-      <ul class="nav-items">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Product</a></li>
-        <li><a href="#">About Us</a></li>
-        <li><a href="#">Contact Us</a></li>
-      </ul>
-    </nav>
-    <!-- Banner  Left-->
-
-    <section class="banner">
-      <div>
-        <h2>Mi LED TV 4A PRO 32</h2>
-
-        <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
-
-
-        <span class="banner-price"> $1289</span>
-        <button class="banner-btn">BUY NOW <i class="fa-solid fa-arrow-right"></i></button>
-      </div>
-<!--  Banner Right -->
- <img class="banner-img" src="./images/banner-images/tv.png" alt="">
-    </section>
-
-  </main>
-
-</body>
-
+      </section>
+    </main>
+  </body>
 </html>

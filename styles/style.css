@@ -1,25 +1,44 @@
 * {
   /* background-color: rebeccapurple; */
   box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
 }
-
+/* Common CSS */
 .container {
   max-width: 1280px;
   margin: 0 auto;
 }
-
+.panda-btn {
+  font-weight: 500px;
+  font-weight: 500;
+  font-size: 16px;
+  background: linear-gradient(#ff589bff, #ff136fff);
+  color: #ffffff;
+  border: none;
+  border-radius: 15px;
+  padding: 15px 35px;
+  font-weight: bold;
+}
+.common-section-title{
+  /* color: white; */
+  font-size: 36px;
+  font-weight: 600px;
+}
+/* Custom CSS */
 nav {
   display: flex;
   justify-content: space-between;
+  padding: 15px 0;
+  /* background-color: green; */
 }
 
 .search-parent {
   position: relative;
-  color: #BABABA;
+  color: #bababa;
 }
 
 .search-parent input {
-
   border-radius: 66px;
   padding: 15px 30px;
   width: 600px;
@@ -32,7 +51,6 @@ nav {
   top: 17px;
 
   right: 35px;
-
 }
 
 .nav-items {
@@ -55,34 +73,144 @@ nav {
   gap: 5px;
   align-items: center;
   background-color: rgb(254, 234, 233);
-  color: #4E4E4E;
+  color: #4e4e4e;
   margin: 0 auto;
+  margin-top: 25px;
+  padding: 28px;
+  border-radius: 10px;
 }
 
-.banner h2{
-  /* Font: Poppins; */
-Font-weight: 700px;
-Font-size:56px;
+.banner h2 {
+ 
+  font-weight: 700px;
+  font-size: 56px;
 
-text-align: Align left;
+  text-align: Align left;
 }
-.banner p{
- color:#4E4E4E;
-font-weight: 400;
+.banner p {
+  color: #4e4e4e;
+  font-weight: 400;
+  width: 456px;
 }
-
 
 .banner-img {
   width: 402px;
   height: 378px;
 }
 
-.banner-price{
-color: #FF136F;
-Font-weight: 500;
-font-size: 41px;
+.banner-price {
+  color: #ff136f;
+  font-weight: 700;
+  font-size: 70px;
+  display: block;
+
+  /* padding: 20px; */
+  margin-bottom: 0;
+}
+/*    Category - Card Section    */
+.categories{
+  margin-top: 64px auto;
+}
+.category-card {
+  display: flex;
+  justify-content: space-between;
+  gap: 4px;
+  align-items: center;
+  padding: 20px;
+  border-radius: 30px;
+   flex: 1;
+}
+.category-card{
+  font-size: 30px;
+  font-weight: bold;
+  color: white;
+}
+.categories-card-container {
+  display: flex;
+  gap: 26px;  
+}
+/* we can use odd and even as well to catch children */
+.category-card:nth-child(1){
+background: linear-gradient(
+    151.85deg,
+    rgb(255, 156, 53) 14.537%,
+    rgb(255, 208, 25) 84.486%
+  );
+}
+.category-card:nth-child(2){
+/* Linear */
+background: linear-gradient(180.00deg, rgb(255, 88, 155) -0.006%,rgb(255, 19, 111) 99.994%);
+}
+.category-card:nth-child(3){
+  background: linear-gradient(170.38deg, rgb(66, 137, 255) 15.416%,rgb(63, 7, 248) 74.29%);
+}
+/* Shoes and Bag Section */
+.shoes-backpack-parent{
+  background: rgb(244, 244, 244);
+}
+.shoes-backpack-title-parent{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.shoes-backpack-title-parent h2{
+font-weight: bold;
+font-size: 36px;
+}
+.shoes-backpack-title-parent p{
+font-size: 20px;
+color: #FF9D00;
+}
+/* Shoes Section */
+
+.shoes-section{
+  background: rgb(244, 244, 244);
+  padding: 50px 0;
+}
+
+.shoe-card-container{
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+  
+}
+.shoe-card{
+  background-color: white;
+  border-radius: 10px;
+  text-align: center;
+  padding: 30px;
+}
+.card-price{
+ display: block;
+ font-size: 22px;
+ font-weight: 600;
+ margin-bottom: 12px;
+}
+
+.shoe-card img{
+  width: 336px;
+  height: 202px;
+}
+.shoe-card .panda-btn{
+  background: black;
+}
+/* contact-us */
+.contact-us-parent{
+  background: rgb(255, 242, 241);
+  text-align: center;
+  padding: 25px 15px;
+  margin: 50px auto;
+  border-radius: 15px;
+  padding: 50px 20px;
+}
+.contact-input-btn-parent input{
+border: none;
+padding: 15px 152px;
 
 }
-.banner-btn{
-  
+
+.contact-input-btn-parent .panda-btn{
+border-top-left-radius: 0;
+border-bottom-left-radius: 0;
+
 }
